@@ -1,5 +1,6 @@
 SRC_NAME=mbedtls-3.6.2
-SRC_URL=https://codeload.github.com/Mbed-TLS/mbedtls/tar.gz/$(SRC_NAME}
+mbedtls_verson=3.6.2
+SRC_URL=https://codeload.github.com/Mbed-TLS/mbedtls/tar.gz/v$(mbedtls_verson}
 
 all: download_test extract_test config_test
 	$(MAKE) -j$(HOST_NCPU) -C $(SRC_NAME)/build
