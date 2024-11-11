@@ -1,5 +1,6 @@
-SRC_NAME=1.34.3
-SRC_URL=https://codeload.github.com/c-ares/c-ares/tar.gz/v$(SRC_NAME)
+SRC_NAME=c-ares-1.34.3
+c-ares_version=1.34.3
+SRC_URL=https://codeload.github.com/c-ares/c-ares/tar.gz/v$(c-ares_version)
 
 all: download_test extract_test config_test
 	$(MAKE) -j$(HOST_NCPU) -C $(SRC_NAME)/build
